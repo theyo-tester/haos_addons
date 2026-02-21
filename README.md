@@ -1,4 +1,4 @@
-# My Home Assistant add-on repository
+# Teoli Assistant add-on repository
 
 In order to add docker containers to HomeAssistant OS (HAOS) with minimal footprint (making use of the already available HAOS Supervisor framework) I created this repo.
 Addons in HAOS are nothing else than Docker containers managed by The HA Supervisor.
