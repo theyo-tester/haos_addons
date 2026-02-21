@@ -9,7 +9,7 @@ WORKDIR /huawei_smart_logger_docker-v1.0.18
 RUN apt-get update && apt-get install -y jq && rm -rf /var/lib/apt/lists/*
 
 # Clone the repository
-RUN git clone https://github.com/mayberryjp/huawei_smart_logger_docker .
+RUN git clone https://github.com/theyo-tester/huawei_smart_logger_addon .
 
 # Create a virtual environment and install the dependencies
 RUN python -m venv venv
