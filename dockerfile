@@ -3,7 +3,7 @@ ARG CACHEBUST=1
 FROM python:3.11.7
 
 # Set the working directory
-WORKDIR /huawei_smart_logger_docker-v1.0.18
+WORKDIR /huawei_smart_logger
 
 # Install jq for parsing JSON configuration
 RUN apt-get update && apt-get install -y jq && rm -rf /var/lib/apt/lists/*
