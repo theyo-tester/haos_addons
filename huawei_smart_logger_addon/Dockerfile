@@ -1,6 +1,6 @@
 #Use an official Python runtime as the base image
 ARG CACHEBUST=1
-FROM python:3.11.7
+FROM python:3.12-slim
 
 # Set the working directory
 WORKDIR /huawei_smart_logger
