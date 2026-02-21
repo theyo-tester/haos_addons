@@ -50,5 +50,5 @@ export UPDATE_INTERVAL
 #echo "========================================="
 
 # Run the Python application
-cd /huawei_smart_logger_docker-v1.0.18
+cd /huawei_smart_logger
 exec venv/bin/python -u huawei_smart_logger.py
