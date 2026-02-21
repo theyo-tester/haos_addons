@@ -13,6 +13,8 @@ if [ ! -f "$CONFIG_PATH" ]; then
     MQTT_HOST="homeassistant"
     MQTT_USERNAME="hassio"
     MQTT_PASSWORD="changeMe"
+    UPDATE_INTERVAL=60
+    
 else
     echo "Loading configuration from $CONFIG_PATH"
    # cat $CONFIG_PATH  # ... Print the entire config file for debugging
@@ -24,6 +26,7 @@ else
     MQTT_HOST=$(jq -r '.MQTT_HOST' $CONFIG_PATH)
     MQTT_USERNAME=$(jq -r '.MQTT_USERNAME' $CONFIG_PATH)
     MQTT_PASSWORD=$(jq -r '.MQTT_PASSWORD' $CONFIG_PATH)
+    UPDATE_INTERVAL=$(jq -r '.UPDATE_INTERVAL' $CONFIG_PATH)
 fi
 
 # Export as environment variables
@@ -32,7 +35,7 @@ export HUAWEI_USERNAME
 export HUAWEI_PASSWORD
 export MQTT_HOST
 export MQTT_USERNAME
-export MQTT_PASSWORD
+export UPDATE_INTERVAL
 
 # Debug: Print the variables before starting Python
 #echo "========================================="
@@ -43,6 +46,7 @@ export MQTT_PASSWORD
 #echo "MQTT_HOST: $MQTT_HOST"
 #echo "MQTT_USERNAME: $MQTT_USERNAME"
 #echo "MQTT_PASSWORD: $MQTT_PASSWORD"
+#echo "UPDATE_INTERVAL: $UPDATE_INTERVAL"
 #echo "========================================="
 
 # Run the Python application
