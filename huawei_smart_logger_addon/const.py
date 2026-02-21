@@ -1,5 +1,5 @@
 IS_CONTAINER=1
-VERSION="v1.0.18"
+VERSION="v1.0.2"
 
 ENTITIES =  {
     "grid-tied_active_power": {"type": "energy", "unit": "kWh"},
