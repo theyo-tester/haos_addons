@@ -2,6 +2,9 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
+ARG BUILD_VERSION
+ENV BUILD_VERSION=$BUILD_VERSION
+
 # Set the working directory
 WORKDIR /share/huawei_smart_logger
 

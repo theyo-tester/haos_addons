@@ -18,7 +18,7 @@ ENTITIES =  {
     "battery_charge_discharge_power": {"type": "power", "unit": "kW"},
     "reactive_pv_power": {"type": "power", "unit": "kW"},
     "reactive_ess_power": {"type": "power", "unit": "kW"},
-    "soc": {"type": "battery", "unit": "%"},
+    "real-time_soc": {"type": "battery", "unit": "%"},
     "current-day_charge_capacity": {"type": "energy", "unit": "kWh"},
     "current-day_discharge_capacity": {"type": "energy", "unit": "kWh"},
     "total_charge": {"type": "energy", "unit": "kWh"},
